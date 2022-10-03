@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+font-family: 'Courier New', Courier, monospace;    
+font-size: 16px;
+scroll-behavior: smooth;
+}
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+
+  .icons{
+        height: 80px;
+        transform: translatey(0px);
+        animation: float 3s ease-in-out infinite;
+      }
+      @keyframes float {
+          0% {
+            transform: translatey(0px);
+          }
+          50% {
+            transform: translatey(-10px);
+          }
+          100% {
+            transform: translatey(0px);
+          }
+      }
+
+      @keyframes Color{
+        0%{
+          color:red;
+        }
+    
+        50%{
+          color:yellow;
+        }
+    
+        75%{
+          color:blue;
+        }
+
+      }
+.nav-link, .nav-linkactive{
+           animation: Color 4s linear infinite;
+        -webkit-animation: Color 4s ease-in-out infinite;
+      }
+
+.a.navbar-brand {
+    background-color: black;
+    width: 400px;
+    height: 30px; 
+    margin: 30px;
+    transition-duration: 2s;
+    
+}
+
+.a.navbar-brand:hover{
+    background-color: red;
+    width: 400px;
+    height: 30px; 
+    margin: 30px;
+    transition-duration: 2s;
+
+}
+
+.nav-link, .nav-linkactive {
+color: black;
+transition-duration:1s;
+}
+.img{
+    transition-duration: 1s;
+    transition-property: transform;
+    transition-delay: 0s,1s;
+}
+
+.img:hover {
+    transition-property: 50%;
+    transform: rotate(360deg);
+
+}
+.nav-link:hover {
+    color: red;
+    transition-duration:1s;  
+}
+.caja1{
+    color: black;
+    transition-duration:1s;
+    box-shadow: 0 0 25px 15px rgb (0,0,0,0,3);
+
+
+}
+.caja1:hover{ 
+    color: white;
+    background-color: black;
+    transform: translate(0,5px);
+    box-shadow: 0 0 25px 35px rgb (0,0,0,0,3);
+}
+
+.article {
+transition-duration: 1s;
+transition-property: backgoround-color,transform;
+transition-delay: 0s,2s,4s;
+transition-timing-function: cubic-bezier(1,-0.01,1,.98);
+transition: 2s 0s all ease;
+}
+
+.article:hover {
+border-radius: 50%;
+transform: rotate(360deg);
+ 
+}
+
+.cajacv{
+    color: white;
+    background-color: black;
+    transform: translate(0,5px);
+    box-shadow: 0 0 25px 35px rgb (0,0,0,0,3);
+    transition: 2s;
+
+}
+
+.cajacv:hover{
+
+    color: black;
+    background-color: red;
+    transform: translate(0,5px);
+    box-shadow: 0 0 25px 35px rgb (0,0,0,0,3);
+}
+
+.icons{
+    color: black;
+    transition-duration: 1s;  
+}
+
+.icons:hover{
+    color: red;
+
+}
+
+.frases{
+    color: white;
+    background-image: linear-gradient(180deg, #ff9d7a 0, #ff8f83 10%, #ff8089 20%, #ff718d 30%, #ff628d 40%, #f25389 50%, #d34683 60%, #b63c7d 70%, #9e3678 80%, #883174 90%, #752e71 100%);
+    transform: translate(0,5px);
+    box-shadow: 0 0 25px 35px rgb (0,0,0,0,3);
+    transition: 2s;
+}
+
+.frases:hover{
+    color: black;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+    transform: translate(0,5px);
+    box-shadow: 0 0 25px 35px rgb (0,0,0,0,3);
+}
+
+.lista {
+    color: white;
+    background: linear-gradient(90deg, rgba(39,30,130,1) 0%, rgba(133,74,138,1) 0%, rgba(255,153,192,1) 100%, rgba(69,131,252,1) 100%);
+}
+
+.bg-light {
+    background-color: #ff628d;
+    color: white;
+}
+.text-center {
+    width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+}
+
+body{
+  font-family: Arial;
+  background-color: #fff;
+  padding: 50px;
+}
+.login{
+  margin: 20px auto;
+  width: 300px;
+}
+.login-screen{
+  background-color: fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.app-title{
+  text-align: center;
+  color:#777;
+}
+.login-form{
+  margin-bottom: center;
+}
+.control-login{
+  margin-bottom: 10px;
+}
+input{
+  text-align: center;
+  background-color: #752e71;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border .5s;
+}
+input:focus{
+  border: 2px solid #777;
+  box-shadow: none;
+}
+.btn{
+  text-align: center;
+  border:2px solid transparent;
+  background: #883174;
+  color: #fff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  display: block;
+  width: 250px;
+}
+.btn:hover{
+  background-color: #777;
+}
+.login-link{
+  text-align: center;
+  font-size: 12px;
+  color: black;
+  display: block;
+  margin-top: 12px;
+}
